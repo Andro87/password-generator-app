@@ -1,0 +1,90 @@
+@use "styles/helpers" as *;
+
+.strength_container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--very-dark-grey);
+    padding: 1rem;
+    @include breakpoint($small) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: initial;
+    }
+    @include breakpoint($medium) {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+}
+
+.strength_label {
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include breakpoint($medium) {
+        font-size: 1.125rem;
+    }
+}
+
+.checker_container {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 16px;
+        @include breakpoint($medium) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.tooweak {
+    .checker {
+        &:nth-child(2) {
+            background-color: var(--red);
+        }
+    }
+}
+
+.weak {
+    .checker {
+        &:nth-child(2),
+        &:nth-child(3) {
+            background-color: var(--orange);
+        }
+    }
+}
+
+.medium {
+    .checker {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            background-color: var(--yellow);
+        }
+    }
+}
+
+.strong {
+    .checker {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+            background-color: var(--neon-green);
+        }
+    }
+}
+
+.checker {
+    border: 2px solid magenta;
+    width: 0.625rem;
+    height: 1.75rem;
+    border: 2px solid var(--almost-white);
+    margin-left: 8px;
+}

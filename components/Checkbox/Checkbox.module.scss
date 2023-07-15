@@ -1,0 +1,40 @@
+@use "styles/helpers" as *;
+
+.checkbox_container {
+    display: flex;
+    gap: 10px;
+
+    label {
+        text-transform: capitalize;
+    }
+}
+.checkbox {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid var(--almost-white);
+    @include transition;
+
+    &:hover {
+        border: 2px solid var(--neon-green);
+        cursor: pointer;
+    }
+    &:focus {
+        border: 2px solid var(--neon-green);
+    }
+}
+
+.checked {
+    background-color: var(--neon-green);
+    border: none;
+    position: relative;
+    &::before {
+        content: url(../../public/assets/images/icon-check.svg);
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

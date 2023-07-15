@@ -1,0 +1,71 @@
+@use "styles/helpers" as *;
+
+.home_container {
+    background: linear-gradient(180deg, #14131b 0%, #08070b 100%);
+    padding-block: 4rem;
+    min-height: 100vh;
+    @include breakpoint($medium) {
+        padding-top: 8rem;
+        padding-bottom: 12rem;
+    }
+    h1 {
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--grey);
+        margin-bottom: 1rem;
+    }
+}
+
+.main_container {
+    @include container;
+}
+
+.form_container {
+    padding: 1rem;
+    background-color: var(--dark-grey);
+    @include breakpoint($medium) {
+        padding: 2rem;
+    }
+}
+
+.checkboxes_container {
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn_submit {
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dark-grey);
+    background-color: var(--neon-green);
+    width: 100%;
+    padding-block: 1em;
+    border: 2px solid var(--neon-green, #a4ffaf);
+    cursor: pointer;
+    @include transition;
+    @include breakpoint($medium) {
+        font-size: 1.25rem;
+    }
+
+    span {
+        margin-left: 1rem;
+        @include breakpoint($medium) {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &:hover {
+        color: var(--neon-green);
+        background-color: transparent;
+        svg {
+            path {
+                @include transition;
+                fill: var(--neon-green);
+            }
+        }
+    }
+}
