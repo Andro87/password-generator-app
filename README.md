@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL here](https://your-solution-url.com)
--   Live Site URL: [Live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Solution URL here](https://github.com/Andro87/password-generator-app.git)
+-   Live Site URL: [Live site URL here](https://password-generator-app-beta.vercel.app/)
 
 ## My process
 
@@ -56,8 +56,8 @@ It was a great challenge to work on as it allowed me to focus on different aspec
 ### Useful resources
 
 -   [How to add copy to clipboard functionality in a ReactJs App](https://medium.com/nerd-for-tech/how-to-add-copy-to-clipboard-functionality-in-a-reactjs-app-45404413fdb2) - This helped to copy the generated password to the computer's clipboard.
--   [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/) - This is articl helped me to learn more about how to create a custom range input and apply this concept to my case.
+-   [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/) - This is article helped me to learn more about how to create a custom range input and apply this concept to my case.
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Andro87)
+-   Frontend Mentor - [@Andro87](https://www.frontendmentor.io/profile/Andro87)
