@@ -153,28 +153,28 @@ export default function Home() {
                     />
                     <div className={styles.checkboxes_container}>
                         <Checkbox
-                            title="uppercase letters"
+                            title="uppercase"
                             name="isUppercase"
                             isChecked={passwordData.isUppercase}
                             description="include uppercase letters"
                             onCheck={handleChange}
                         />
                         <Checkbox
-                            title="lowercase letters"
+                            title="lowercase"
                             name="isLowercase"
                             isChecked={passwordData.isLowercase}
                             description="include lowercase letters"
                             onCheck={handleChange}
                         />
                         <Checkbox
-                            title="numbers characters"
+                            title="numbers"
                             name="isNumbers"
                             isChecked={passwordData.isNumbers}
                             description="include numbers"
                             onCheck={handleChange}
                         />
                         <Checkbox
-                            title="symbols characters"
+                            title="symbols"
                             name="isSymbols"
                             isChecked={passwordData.isSymbols}
                             description="include symbols"
